@@ -141,7 +141,8 @@ int main()
 		printf("Selecione uma Opção:\n\n"); //Inicio do sistema
 		printf("\t1 - Cadastrar Aluno\n");
 		printf("\t2 - Consultar Aluno\n");
-		printf("\t3 - Excluir Usuarios\n\n\n"); 
+		printf("\t3 - Excluir Usuarios\n\n\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: "); //fim do sistema
 	
 		scanf("%d", &opcao); //armazem de escolha do usuario
@@ -161,6 +162,11 @@ int main()
 			case 3:
 				excluir();
 			break;
+			
+			case 4:
+				printf("Obrigado por ultilizar o sistema!\n");
+				return 0;
+				break;
 			
 			default:
 				printf("Opção indisponivel no momento, volte e selecione uma das opções disponiveis no sistema\n");
